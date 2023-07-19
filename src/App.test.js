@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 
 test('renders learn react link', () => {
   render(<App />);

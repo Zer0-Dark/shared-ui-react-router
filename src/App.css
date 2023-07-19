@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-ui {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee;
+  margin-bottom: 20px;
+}
+.page {
+  background-color: grey;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+.content {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.content p {
+  /* text-align: center; */
+  margin-top: 20px;
+  font-size: 18px;
+}
+.content h1 {
+  text-align: center;
+}
+.list {
+  width: 20%;
+  min-height: calc(100vh - 180px );
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list .titles a {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-weight: 900;
+}
+.list .titles a:visited {
+  color: black;
+}

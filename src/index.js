@@ -1,16 +1,20 @@
-import React from 'react';
+import React from "react"
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Links from "./components/Links";
+import Articles from "./components/Articles";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-
-      <Route path='/' element={<App></App>}></Route>
-
+      <Route path="/" element={<App></App>}>
+        <Route path=":id" element={<Articles />} />
+        
+      </Route>
     </Routes>
 
   </BrowserRouter>
